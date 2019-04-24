@@ -8,7 +8,6 @@ node {
     def dockerFile = 'Dockerfile'
 
     try {
-        notifyBuild('STARTED')
         stage('Clone repository') {
           checkout scm
         }
